@@ -1,7 +1,6 @@
 """Reusable UI components — every component is intentional."""
 from __future__ import annotations
 import streamlit as st
-from streamlit.components.v1 import html as st_html
 
 LANG_COLORS = {
     "python":"#3776AB","javascript":"#F7DF1E","typescript":"#3178C6",

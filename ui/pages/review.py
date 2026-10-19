@@ -5,7 +5,7 @@ import streamlit as st
 import plotly.graph_objects as go
 from ui.components import (
     step_indicator, section_label, issue_card,
-    metric_card, empty_state, lang_pill, hint, spacer, badge,
+    metric_card, empty_state, lang_pill, hint, spacer,
 )
 from utils.report import generate_markdown_report
 from utils.history import save_review
@@ -132,8 +132,8 @@ def render() -> None:
                 col_lang, col_run = st.columns([2, 1])
                 with col_lang:
                     st.markdown(
-                        f'<div style="display:flex;align-items:center;gap:10px;padding:8px 0;">'
-                        f'<span style="font-size:13px;color:var(--text2);">Detected:</span>',
+                        '<div style="display:flex;align-items:center;gap:10px;padding:8px 0;">'
+                        '<span style="font-size:13px;color:var(--text2);">Detected:</span>',
                         unsafe_allow_html=True,
                     )
                     lang_pill(lang)

@@ -5,7 +5,6 @@ structured, parseable JSON reviews every time.
 """
 from __future__ import annotations
 
-import json
 
 SYSTEM_PROMPT = """You are a staff-level software engineer and security expert with 15 years of experience at companies like Google, Stripe, and GitHub. You perform thorough, opinionated code reviews that catch issues junior engineers miss.
 

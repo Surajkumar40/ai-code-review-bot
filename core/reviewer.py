@@ -6,15 +6,14 @@ from __future__ import annotations
 
 import os
 import time
-from pathlib import Path
 from typing import Callable, Optional
 
 from loguru import logger
 
 from api.groq_client import review_code, ReviewBotError
-from api.github_client import get_repo_files, fetch_file_content, GitHubError
+from api.github_client import fetch_file_content, GitHubError
 from core.prompt_builder import build_system_prompt, build_user_prompt, sanitize_code
-from core.scorer import summarize, ScoreSummary
+from core.scorer import summarize
 from utils.cache import get_cached_review, cache_review
 
 

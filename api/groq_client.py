@@ -24,7 +24,7 @@ load_dotenv()
 
 # ── Lazy import so the app doesn't crash if groq isn't installed yet ──────────
 try:
-    from groq import Groq, APIError, APITimeoutError, RateLimitError
+    from groq import Groq, APIError
     _GROQ_AVAILABLE = True
 except ImportError:
     _GROQ_AVAILABLE = False
